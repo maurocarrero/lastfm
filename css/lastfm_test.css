@@ -1,0 +1,99 @@
+@font-face {
+  font-family: 'existenceunicase_light';
+  src: url("webfonts/existence_unicaselight_macroman/Existence-UnicaseLight-webfont.eot");
+  src: url("webfonts/existence_unicaselight_macroman/Existence-UnicaseLight-webfont.eot?#iefix") format("embedded-opentype"), url("webfonts/existence_unicaselight_macroman/Existence-UnicaseLight-webfont.woff") format("woff"), url("webfonts/existence_unicaselight_macroman/Existence-UnicaseLight-webfont.ttf") format("truetype"), url("webfonts/existence_unicaselight_macroman/Existence-UnicaseLight-webfont.svg#existenceunicase_light") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'existencestencil_light';
+  src: url("webfonts/existence_stencillight_macroman/Existence-StencilLight-webfont.eot");
+  src: url("webfonts/existence_stencillight_macroman/Existence-StencilLight-webfont.eot?#iefix") format("embedded-opentype"), url("webfonts/existence_stencillight_macroman/Existence-StencilLight-webfont.woff") format("woff"), url("webfonts/existence_stencillight_macroman/Existence-StencilLight-webfont.ttf") format("truetype"), url("webfonts/existence_stencillight_macroman/Existence-StencilLight-webfont.svg#existencestencil_light") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'existencelight';
+  src: url("webfonts/existence_light_macroman/Existence-Light-webfont.eot");
+  src: url("webfonts/existence_light_macroman/Existence-Light-webfont.eot?#iefix") format("embedded-opentype"), url("webfonts/existence_light_macroman/Existence-Light-webfont.woff") format("woff"), url("webfonts/existence_light_macroman/Existence-Light-webfont.ttf") format("truetype"), url("webfonts/existence_light_macroman/Existence-Light-webfont.svg#existencelight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 23, ../sass/lastfm_test.scss */
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 28, ../sass/lastfm_test.scss */
+article {
+  align-items: center;
+  border: 2px solid #e3e3e3;
+  box-shadow: 0.1em 0.1em 0.1em #535353;
+  display: flex;
+  flex: 1 100%;
+  flex-direction: column;
+  flex-shrink: 2;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin: 1em 0;
+  min-width: 10em;
+  padding: 1em;
+}
+
+/* line 42, ../sass/lastfm_test.scss */
+body {
+  font-family: sans-serif;
+  font-size: 1.5em;
+}
+
+/* line 46, ../sass/lastfm_test.scss */
+h1, h2, h3, h4, h5, h6, figure {
+  text-align: center;
+}
+
+/* line 49, ../sass/lastfm_test.scss */
+h1, h2 {
+  font-family: 'existencestencil_light', sans-serif;
+}
+
+/* line 52, ../sass/lastfm_test.scss */
+h1 {
+  color: #7c7eff;
+  font-size: 300%;
+}
+
+/* line 56, ../sass/lastfm_test.scss */
+h2 {
+  font-size: 200%;
+}
+
+/* line 59, ../sass/lastfm_test.scss */
+header, footer, aside {
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 63, ../sass/lastfm_test.scss */
+input {
+  border: 1px solid #7c7eff;
+  font-size: 1.2em;
+  line-height: 1.2em;
+  padding: 0.2em 0.4em;
+}
+
+/* line 69, ../sass/lastfm_test.scss */
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 1em;
+}
+
+/* line 74, ../sass/lastfm_test.scss */
+#artist_search button {
+  line-height: 3em;
+}
