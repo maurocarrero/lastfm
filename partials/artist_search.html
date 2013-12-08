@@ -1,0 +1,17 @@
+<section ng-controller="ArtistSearchController" class="container">
+	<aside id="artist_search">
+		<input placeholder="Artist search..." ng-model="search_string"/>
+		<button ng-click="searchArtist()">Search</button>
+	</aside>
+	<section class="artistlist">
+		<article class="artist" ng-click="artistDetails(artist.mbid)" ng-repeat="artist in artistmatches">
+			<h3>{{ artist.name }}</h3>
+			<figure>
+				<img ng-src="{{ artist.image[2]['#text'] }}">
+			</figure>
+			<footer>
+				<a href="{{ artist.url }}">View in last.fm</a>
+			</footer>
+		</article>
+	</section>
+</section>

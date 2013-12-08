@@ -1,0 +1,14 @@
+<section ng-controller="ArtistDetailsController" class="container">
+	<section class="artistdetails">
+		<article class="artist">
+			<h3>{{ artist.name }}</h3>
+			<figure>
+				<img ng-src="{{ artist.image[2]['#text'] }}">
+			</figure>
+			<p class="bio">{{ artist.bio.summary }}</p>
+			<footer>
+				<a href="{{ artist.url }}">View in last.fm</a>
+			</footer>
+		</article>
+	</section>
+</section>

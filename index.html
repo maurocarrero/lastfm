@@ -2,6 +2,7 @@
 <html ng-app="lastfmApp">
 <head>
 	<title>Music from last.fm</title>
+	<link href="/css/buttons.css" media="screen, projection" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" type="text/css" href="css/lastfm_test.css">
 </head>
 <body >
@@ -12,37 +13,13 @@
 		</hgroup>
 	</header>
 	<section id="main">
-		<section ng-controller="ArtistController" class="container">
-			<aside id="artist_search">
-				<input placeholder="Artist search..." ng-model="search_string"/>
-				<button ng-click="searchArtist()">Search</button>
-			</aside>
-			<article id="mainArtist" ng-repeat="artist in artistmatches">
-				<h3>{{ artist.name }}</h3>
-				<figure>
-					<img ng-src="{{ artist.image[3]['#text'] }}">
-				</figure>
-				<footer>
-					<a href="{{ artist.url }}">View in last.fm</a>
-				</footer>
-			</article>
-			<!-- Similar artists -->
-			<article ng-repeat="artist in artists | filter:filter_name" data-url="{{ artist.url }}">
-				<h3>{{ artist.name }}</h3>
-				<figure>
-					<img ng-src="{{ artist.image[3]['#text'] }}">
-				</figure>
-				<footer>
-					<a href="{{ artist.url }}">View in last.fm</a>
-				</footer>
-			</article>
-		</section>
+		<ng-view></ng-view>
 	</section>
 	<footer>
 		Developed by <strong>la tapera invisible</strong>
 	</footer>
-	<script src="http://code.angularjs.org/1.2.1/angular.min.js"></script>
-	<script src="http://code.angularjs.org/1.2.1/angular-resource.js"></script>
+	<script src="http://code.angularjs.org/1.2.0/angular.min.js"></script>
+	<script src="http://code.angularjs.org/1.2.0/angular-route.js"></script>
 	<script src="js/app/app.js"></script>
 	<script src="js/app/controllers.js"></script>
 	<script src="js/app/services.js"></script>
